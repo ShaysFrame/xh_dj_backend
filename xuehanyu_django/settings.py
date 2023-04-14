@@ -61,7 +61,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     "http://127.0.0.1:8080",
     'http://10.135.20.16:8080',
-    "http://web-production-5cac.up.railway.app",
+    "http://xuehanyu.up.railway.app",
 ]
 
 MIDDLEWARE = [
