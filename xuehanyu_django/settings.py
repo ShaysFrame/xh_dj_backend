@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-0eeo!94a+i)moxvq%__a^)472p1748h&+qx#*ev^!)g-0wxhl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
-WEBSITE_URL = 'http://127.0.0.1:8000'
+# WEBSITE_URL = 'http://127.0.0.1:8000'
 
 REST_FRAMEWORK = {
     'DATETIME_FORMAT': '%d.%m.%Y %H:%M',
@@ -61,6 +61,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     "http://127.0.0.1:8080",
     'http://10.135.20.16:8080',
+    "*"
 ]
 
 MIDDLEWARE = [
@@ -146,6 +147,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 STATIC_ROOT = os.path.join(BASE_DIR, 'public/') # this is 
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
