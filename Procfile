@@ -1,1 +1,2 @@
-web: gunicorn xuehanyu_django.wsgi --log-file -
+web: sh -c 'python manage.py migrate && gunicorn xuehanyu_django.wsgi'
+
