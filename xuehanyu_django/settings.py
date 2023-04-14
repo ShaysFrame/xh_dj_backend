@@ -63,6 +63,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://10.135.20.16:8080',
     "http://xuehanyu.up.railway.app",
     "https://xuehanyu.up.railway.app",
+    "https://xuehanyu.netlify.app/"
 ]
 
 MIDDLEWARE = [
