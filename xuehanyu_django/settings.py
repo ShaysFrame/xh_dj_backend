@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-0eeo!94a+i)moxvq%__a^)472p1748h&+qx#*ev^!)g-0wxhl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://xuehanyu.up.railway.app"]
+ALLOWED_HOSTS = ["http://xuehanyu.up.railway.app"]
 
-# WEBSITE_URL = 'http://127.0.0.1:8000'
+WEBSITE_URL = 'http://xuehanyu.up.railway.app/'
 
 REST_FRAMEWORK = {
     'DATETIME_FORMAT': '%d.%m.%Y %H:%M',
