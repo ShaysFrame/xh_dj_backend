@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-0eeo!94a+i)moxvq%__a^)472p1748h&+qx#*ev^!)g-0wxhl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://xuehanyu.netlify.app']
+ALLOWED_HOSTS = ['*']
 
 WEBSITE_URL = 'https://xuehanyu.up.railway.app'
 
