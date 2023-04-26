@@ -62,12 +62,12 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://xuehanyu.netlify.app",
-    # "https://xuehanyu.up.railway.app",
-    # "http://xuehanyu.up.railway.app",
-    # 'http://localhost:8080',
-    # "http://127.0.0.1:8080",
-    # 'http://10.135.20.16:8080',
-    # 'http://10.135.3.181:8080',
+    "https://xuehanyu.up.railway.app",
+    "http://xuehanyu.up.railway.app",
+    'http://localhost:8080',
+    "http://127.0.0.1:8080",
+    'http://10.135.20.16:8080',
+    'http://10.135.3.181:8080',
 ]
 
 MIDDLEWARE = [
