@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-0eeo!94a+i)moxvq%__a^)472p1748h&+qx#*ev^!)g-0wxhl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["xuehanyu.up.railway.app"]
+ALLOWED_HOSTS = []
 
 WEBSITE_URL = 'https://xuehanyu.up.railway.app'
 
@@ -34,6 +34,8 @@ REST_FRAMEWORK = {
     'DATETIME_FORMAT': '%d.%m.%Y %H:%M',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -54,13 +56,15 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'course',
-    'activity'
+    'activity',
+    'authentication',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
     "http://127.0.0.1:8080",
     'http://10.135.20.16:8080',
+    'http://10.135.3.181:8080',
     "http://xuehanyu.up.railway.app",
     "https://xuehanyu.up.railway.app",
     "https://xuehanyu.netlify.app"
