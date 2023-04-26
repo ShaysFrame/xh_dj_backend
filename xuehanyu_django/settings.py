@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-0eeo!94a+i)moxvq%__a^)472p1748h&+qx#*ev^!)g-0wxhl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://xuehanyu.netlify.app']
 
 WEBSITE_URL = 'https://xuehanyu.up.railway.app'
 
@@ -67,7 +67,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://10.135.3.181:8080',
     "http://xuehanyu.up.railway.app",
     "https://xuehanyu.up.railway.app",
-    "https://xuehanyu.netlify.app"
+    "https://xuehanyu.netlify.app",
 ]
 
 MIDDLEWARE = [
