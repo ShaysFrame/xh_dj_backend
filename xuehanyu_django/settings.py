@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import mimetypes  
+# import mimetypes  
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -161,6 +161,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Disablling the mime
+SECURE_CONTENT_TYPE_NOSNIFF = False
 
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type("application/javascript", ".js", True)
+
+
+# mimetypes.add_type("text/css", ".css", True)
+# mimetypes.add_type("application/javascript", ".js", True)
